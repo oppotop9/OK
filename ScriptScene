@@ -1,0 +1,49 @@
+public class ScriptScene : MonoBehaviour
+{
+
+
+    public void TapNextSceneButton()
+    {
+        SceneManager.LoadScene(1);
+    } //หน้าแรกไปชื่อ
+    public void MyNameButton()
+    {
+        SceneManager.LoadScene(2);
+    } //ชื่อไปหน้าเมนู
+
+    //Menu
+    public void PlayButton()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }// ออกเกม
+
+
+    //หน้าเกม
+    public void ButtonBackGW()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void ButtonNext()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    //หน้าสตอรี่
+    public void ButtonSr1BackMenu()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void ButtonSr2BackMenu()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void ButtonToGame1()
+    {
+        SceneManager.LoadScene(3);
+    }
+}
